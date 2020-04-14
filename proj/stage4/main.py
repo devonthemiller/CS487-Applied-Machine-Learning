@@ -71,13 +71,29 @@ Toy_Story_rating.head()
 # To do this we need to find a Correlation between the two movies' ratings and other movies.
 # This Correlates each movie to Forrest Gump
 # Movies that have a rating closer to 1 indicates a very strong similarity between both movies
-# At First Sight (1999) scored 0.900149, would be an example of that.
 like_Forrest_Gump = matrix.corrwith(Forrest_Gump_rating)
 like_Forrest_Gump.head()
 
 # Use pandas corrwith to get the correlation between two dataframes.
 # This Correlates each movie to Toy Story
 # Movies that have a rating closer to 1 indicates a very strong similarity between both movies
-# The movie "Accused, The (1988) has a score of 0.96225, would be an example of that.
 like_Toy_Story = matrix.corrwith(Toy_Story_rating)
 like_Toy_Story.head()
+
+# In order of movies with the Strongest similarity to Least similarity
+# The movie "The (Klass) Class (2007)" not only has a correlation of 1, but it is
+# at the top of the list, which shows us that it is the most recommended movie.
+correlation_Forrest_Gump = like_Forrest_Gump.sort_values(ascending=False)
+
+# all recommendations with Very Strong similarity to Forrest Gump
+# allRec = like_Forrest_Gump[like_Forrest_Gump == 1].index.tolist()
+# print('\nList of all movies similiar to Forrest Gump: ', allRec)
+
+# Top Five Recommendatins with the Strongest similiarity to Forrest Gump
+topFiveRec = like_Forrest_Gump.sort_values(ascending=False).head(5)
+print('\nTop 5 Recommendations similiar to Forrest Gump: ', topFiveRec)
+
+# Most Recommended Movie with the Strongest similiarity to Forrest Gump
+top_Forrest = like_Forrest_Gump.sort_values(ascending=False).head(1)
+print('\nTop Recommendation similiar to Forrest Gump: ', top_Forrest)
+

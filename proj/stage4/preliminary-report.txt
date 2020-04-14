@@ -19,7 +19,9 @@ may enjoy.
 
 Proposed Solution: 
 
-A proposed solution is to build a item similarity based recommender system, which will store an index of when two people watch the same movie. When this occurs and depending on the score, the system can recommend an item to the other user because it detects that those two users are similar in terms of the movies they 
+A proposed solution is to build a item similarity based recommender system, which will store an index of 
+when two people watch the same movie. When this occurs and depending on the score, the system can recommend 
+an item to the other user because it detects that those two users are similar in terms of the movies they 
 watched.
 
 

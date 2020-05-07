@@ -140,7 +140,7 @@ corr_pulp.dropna(inplace=True)
 corr_Forrest = corr_Forrest.join(ratings['total_ratings'])
 corr_pulp = corr_pulp.join(ratings['total_ratings'])
 
-corr_Forrest .head()
+corr_Forrest.head()
 corr_pulp.head()
 
 # Find movies that are most similar to title with atleast 100 reviews

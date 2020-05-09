@@ -1,0 +1,9 @@
+Team Members:
+
+	Devon Miller
+	Kitt Phi
+
+Each team member contributed an equal amount of work:
+
+	Kitt Phi - Mainly assembled the datasets and the codebase
+	Devon Miller - Mainly wrote report and all other documentation
